@@ -1,4 +1,5 @@
 
+import 'package:first_project/secondPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -57,7 +58,7 @@ class ProductDetailsPage extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                // Add logic for Buy Now button
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>BuyNowPage()));
               },
               child: Text('Buy Now'),
             ),
